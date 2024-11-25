@@ -50,6 +50,11 @@ public class CacheConfiguration {
             createCache(cm, fr.esgi.villes.domain.User.class.getName());
             createCache(cm, fr.esgi.villes.domain.Authority.class.getName());
             createCache(cm, fr.esgi.villes.domain.User.class.getName() + ".authorities");
+            createCache(cm, fr.esgi.villes.domain.Ville.class.getName());
+            createCache(cm, fr.esgi.villes.domain.Ville.class.getName() + ".joueurs");
+            createCache(cm, fr.esgi.villes.domain.Region.class.getName());
+            createCache(cm, fr.esgi.villes.domain.Region.class.getName() + ".villes");
+            createCache(cm, fr.esgi.villes.domain.Joueur.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
